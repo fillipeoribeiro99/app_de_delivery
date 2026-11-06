@@ -44,3 +44,24 @@ h1 {
   font-weight: bold;
   font-size: 1.5rem;
 }
+
+/* Link público para o código-fonte, sempre visível no cabeçalho. */
+.navbar .container { gap: 12px; flex-wrap: wrap; }
+.eco-nav-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.eco-nav-actions .btn { margin-right: 0 !important; }
+.btn-github-eco {
+  display: inline-flex !important; align-items: center; justify-content: center; gap: 9px;
+  padding: 10px 16px !important; border-radius: 9px !important;
+  background: #24292f !important; color: #fff !important;
+  border: 1px solid #24292f !important; font-weight: 600 !important;
+  text-decoration: none !important; transition: transform .2s ease, background-color .2s ease, box-shadow .2s ease;
+}
+.btn-github-eco:hover, .btn-github-eco:focus-visible {
+  background: #3b424a !important; color: #fff !important;
+  transform: translateY(-2px); box-shadow: 0 5px 14px rgba(0,0,0,.18);
+}
+@media (max-width: 600px) {
+  .navbar .container { justify-content: center; }
+  .eco-nav-actions { justify-content: center; }
+  .btn-github-eco { width: 100%; }
+}
